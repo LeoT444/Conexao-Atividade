@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Adicionar Novo Produto</h1>
+    <form method="POST" action="/produtos">
+        <label for="titulo">Nome do Produto:</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Digite o nome do produto" required><br><br>
+        <label for="descricao">Descrição:</label>
+        <textarea name="descricao" required id="descricao" placeholder="Insira a descrição"></textarea><br><br>
+        <label for="preco">Preço:</label>
+        <input type="text" id="preco" name="preco" placeholder="Digite o preço" required><br><br>
+        <label for="imagem">Insira a URL da imagem:</label>
+        <input type="text" id="imagem" name="imagem" placeholder="Digite a URL da imagem" required><br><br>
+        <input type="submit" value="Adicionar">
+    </form>
+    <a href="/">Voltar para a Lista</a>
+</div>

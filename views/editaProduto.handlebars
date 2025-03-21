@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Editar Tarefa</h1>
+    <form method="POST" action="/produtos/{{produto.id}}/editar">
+        <label for="titulo">Nome do Produto:</label>
+        <input type="text" id="titulo" name="titulo" value="{{produto.titulo}}" required><br>
+        <label for="descricao">Descrição:</label>
+        <textarea name="descricao" required id="descricao" value="{{produto.descricao}}"></textarea><br>
+        <label for="preco">Preço:</label>
+        <input type="text" id="preco" name="preco" value="{{produto.preco}}" required><br>
+        <label for="imagem">Insira a URL da imagem:</label>
+        <input type="text" id="imagem" name="imagem" value="{{produto.imagem}}" required><br>
+        <button type="submit">Salvar</button>
+    </form>
+</div>
