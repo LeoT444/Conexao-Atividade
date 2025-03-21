@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Editar Tarefa</h1>
+    <form method="POST" action="/fornecedores/{{fornecedor.id}}/editar">
+        <label for="titulo">Nome do Fornecedor:</label>
+        <input type="text" id="titulo" name="titulo" value="{{fornecedor.nome}}" required><br>
+        <label for="descricao">Descrição:</label>
+        <textarea name="descricao" required id="descricao" value="{{fornecedor.descricao}}"></textarea><br>
+        <button type="submit">Salvar</button>
+    </form>
+</div>

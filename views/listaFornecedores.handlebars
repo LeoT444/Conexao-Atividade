@@ -1,17 +1,16 @@
 <div class="container">
     <h1>Produtos:</h1>
-    <a href="/produtos/adicionar" class="btn">Adicionar Novo Produto</a>
+    <a href="/fornecedores/adicionar" class="btn">Adicionar Novo Fornecedor</a>
     <!-- !PAGE CONTENT! -->
         <!-- First Photo Grid-->
         
         <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-            {{#each produtos}}
+            {{#each fornecedores}}
             <div class="w3-quarter">
-                <img src="{{imagem}}" style="width:100%">
-                <h3>{{titulo}}</h3>
-                <p>{{descricao}}<br>R$ {{preco}}</p>
-                <a href="/produtos/{{id}}/editar">Editar</a>
-                <a href="/produtos/{{id}}/excluir">Excluir</a>
+                <h3>{{nome}}</h3>
+                <p>{{descricao}}</p>
+                <a href="/fornecedores/{{id}}/editar">Editar</a>
+                <a href="/fornecedores/{{id}}/excluir">Excluir</a>
             </div>
             {{/each}}
         <!-- End page content -->
